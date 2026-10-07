@@ -15,6 +15,7 @@ jobs:
         run: echo "Répertoire de build $BUILD_PATH"
 
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Étape de test
